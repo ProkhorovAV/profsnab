@@ -1,0 +1,41 @@
+.container
+    .container.main_body
+        .row
+            ul.nav.nav-tabs
+                li
+                    a(ui-sref="main") Главная
+                li.active
+                    a(href="#") Продукция
+                li
+                    a(ui-sref="information") Полезная информация
+                li
+                    a(ui-sref="kontaks") Контакты
+                li
+                    a(ui-sref='recall') Отзывы
+    .container(ng-show='full_text')
+        .col-sm-12
+            .col-md-3.element(ng-repeat='product in products',ng-click='Open_full($index)').col-sm-4.col-xs-12
+                img(ng-src='{{product.img[0]}}')
+                br
+                a {{product.name}}
+    .container(ng-hide='full_text')
+        .col-sm-12._btn_return
+            button.btn.btn-default.col-md-1(ng-click='Open_full(-1)').col-sm-2
+                i.fa.fa-reply(aria-hidden="true") Назад
+        .col-sm-5.col-sm-offset-1._images_full.col-xs-12
+            .col-xs-12
+                img(ng-src='{{big_img_src}}').col-xs-12
+            .col-xs-12
+                img(ng-src='{{proguct_full.img[0]}}', class='_passiv_img_page-{{img_set[0]}}', ng-mouseover='img_hover(1)' ).col-xs-4
+                img(ng-src='{{proguct_full.img[1]}}', class='_passiv_img_page-{{img_set[1]}}',ng-mouseover='img_hover(2)').col-xs-4
+                img(ng-src='{{proguct_full.img[2]}}', class='_passiv_img_page-{{img_set[2]}}',ng-mouseover='img_hover(3)').col-xs-4
+        .col-sm-5.col-sm-offset-1._opisanie_tovara.col-xs-12
+            h2 {{proguct_full.name}}
+            .col-sm-12(style='text-align: justify;') {{proguct_full.text}}
+            .col-sm-12(style='text-align: justify;') {{proguct_full.options}}
+            .col-sm-12(ng-show="proguct_full.instruction")
+                .col-xs-12._full_instruction Инструкция по применеию
+                .col-xs-12
+                    img(ng-src='{{img_full}}' , ng-repeat='img_full in proguct_full.instruction').col-xs-12
+
+

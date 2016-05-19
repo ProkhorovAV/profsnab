@@ -1,0 +1,10 @@
+angular.module('profnab_App',[
+    'ui.router',
+    'yaMap',
+    'profnab_App.controller.Main',
+    'profnab_App.controller.Heder',
+    'profnab_App.controller.Product',
+    'profnab_App.controller.Recall',
+    'profnab_App.controller.Kontaks',
+    'profnab_App.controller.Information'
+]);

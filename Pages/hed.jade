@@ -1,0 +1,37 @@
+.container.heder
+    .row
+        .col-md-1.col-sm-2.col-xs-4
+            img.logo(src='img/logo.png')
+        .col-sm-6._text_heder.col-xs-8 ПРОФ СНАБ ( упаковка ) - это молодая, развивающаяся компания, работающая в сфере поставки упаковочных материалов.
+        .col-md-5.col-sm-4._heder_btn_up.col-xs-12
+            .col-md-6.col-xs-offset-1.btn.btn-default.col-sm-10(ng-click='OpenPhone()')
+                i.fa.fa-phone(aria-hidden="true") +7 (499) 398-41-23
+            .col-md-4.btn.btn-default.col-xs-offset-1.col-sm-10(ng-click='OpenMail()')
+                i.fa.fa-envelope(aria-hidden="true") E-mail
+#Shadow(ng-click='BoxDisplayClose()', ng-show='box.shadow')
+#Mail_box(ng-show='box.mail')
+    div.row.frm.col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2.col-xs-10.col-xs-offset-1
+        form.form-horizontal(role="form")
+            h3(style='text-align: center;') Отправить сообщение в "ПРОФ СНАБ"
+            .form-group
+                label.col-sm-3.control-label(for="inputLogin") Введите Ваш Email
+                .col-sm-9
+                    input.form-control(type="text" id="inputLogin" placeholder="Email")
+            .form-group
+                label.col-sm-3.control-label(for="inputName") Введите текст сообщения
+                .col-sm-9
+                    textarea.form-control(col='10' id="inputName" placeholder="Сообщение")
+            .form-group
+                .col-sm-offset-8.col-sm-4
+                    input.btn.btn-primary(type='button', value='Отправить сообщение', ng-click='SendMaessges()')
+#Phone_box(ng-show='box.phone')
+    div.row.frm.col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2.col-xs-10.col-xs-offset-1
+        form.form-horizontal(role="form")
+            h3(style='text-align: center;') Заказать обратный звонок
+            .form-group
+                label.col-sm-3.control-label(for="inputPhone") Введите телефон
+                .col-sm-9
+                    input.form-control(type="text" id="inputPhone" placeholder="Email")
+            .form-group
+                .col-sm-offset-8.col-sm-4
+                    input.btn.btn-primary(type='button', value='Заказать', ng-click='SendPhone()')

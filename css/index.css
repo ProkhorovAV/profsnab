@@ -1,0 +1,237 @@
+* {
+  font-size: 1em;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+.carousel {
+  padding: 30px;
+}
+.carousel img {
+  height: 100%;
+  width: 100%;
+}
+ya-map {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+._images_full div:nth-child(1) img {
+  height: 300px;
+}
+._images_full div:nth-child(2) img {
+  height: 100px;
+}
+._passiv_img_page-false {
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.48);
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.48);
+}
+._btn_return {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.yandex {
+  margin-top: 16px;
+}
+.addres p,
+.phone p,
+.skyp p {
+  margin-left: 20px;
+}
+._opisanie_tovara {
+  border: 1px solid;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.48);
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.48);
+  padding-bottom: 16px;
+}
+.heder {
+  margin-top: 10px;
+}
+._text_heder {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+.text_main {
+  padding: 10px;
+}
+.text_main p {
+  font-family: RobotoLight;
+  text-indent: 12px;
+  text-align: justify;
+  font-size: 1em;
+}
+.text_main p:nth-child(4) {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+.logo {
+  height: 100%;
+  width: 100%;
+}
+.main_body {
+  margin-top: 30px;
+}
+.slide_item {
+  text-align: center;
+  margin-top: 20px;
+}
+.slide_item img {
+  width: 500px;
+  height: 300px;
+}
+.next_button {
+  right: 50px;
+  background-color: #fff;
+  border-radius: 10em;
+  color: #7573D9;
+  cursor: pointer;
+  font-size: 46px;
+  padding: 0 25px;
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  opacity: .7;
+}
+.prev_button {
+  left: 50px;
+  background-color: #fff;
+  border-radius: 10em;
+  color: #7573D9;
+  cursor: pointer;
+  font-size: 46px;
+  padding: 0 25px;
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  opacity: .7;
+}
+.element {
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 20px ;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.51);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.51);
+}
+.element img {
+  height: 200px;
+  width: 200px;
+  transition: 1s;
+}
+.element:hover {
+  -webkit-box-shadow: 0px 6px 5px 3px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 0px 6px 5px 3px rgba(0, 0, 0, 0.51);
+  box-shadow: 0px 6px 5px 3px rgba(0, 0, 0, 0.51);
+}
+.element:hover a {
+  color: #FF8300 ;
+}
+.element a {
+  cursor: pointer;
+}
+.otziv {
+  margin-top: 30px;
+  position: relative;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+}
+.otziv img {
+  vertical-align: middle;
+  float: left;
+}
+.otziv div {
+  padding: 5px;
+  position: relative;
+  font-family: RobotoRegular;
+  text-align: justify;
+  float: left;
+}
+.otziv div:nth-child(2) {
+  text-align: right;
+}
+#map {
+  height: 400px;
+  width: 400px;
+}
+#Shadow {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 15;
+  background-color: black;
+  opacity: 0.5;
+}
+.fa-phone:before,
+.fa-envelope:before {
+  margin-right: 10px;
+}
+.nav {
+  font-size: 1.1em;
+}
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "\f112";
+  margin-right: 8px;
+}
+#Mail_box {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+}
+#Mail_box .frm {
+  background-color: white;
+  border-radius: 10px;
+}
+#Mail_box .frm textarea {
+  height: 200px;
+}
+#Phone_box {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+}
+#Phone_box .frm {
+  background-color: white;
+  border-radius: 10px;
+}
+._full_instruction {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  text-align: center;
+  /* text-decoration: underline; */
+  border-bottom: 1px solid;
+}
+@media (max-width: 992px) {
+  ._heder_btn_up > div {
+    margin-top: 10px;
+  }
+  ._images_full div:nth-child(1) img {
+    height: 200px;
+  }
+  ._images_full div:nth-child(2) img {
+    height: 70px;
+  }
+  .next_button,
+  .prev_button {
+    font-size: 30px;
+    padding: 0 16px;
+  }
+  ._opisanie_tovara {
+    margin-top: 10px;
+  }
+  ._images_full div:nth-child(1) img {
+    height: 250px;
+  }
+  ._images_full div:nth-child(2) img {
+    height: 90px;
+  }
+}

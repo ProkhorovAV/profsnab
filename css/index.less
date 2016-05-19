@@ -1,0 +1,278 @@
+@heder-font:1em;
+*{
+  font-size: @heder-font;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+
+.carousel{
+padding: 30px;
+  img{
+    height: 100%;
+    width: 100%;
+  }
+}
+ya-map {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+._images_full{
+  div:nth-child(1){
+    img{
+      height: 300px;
+    }
+  }
+  div:nth-child(2){
+    img{
+      height: 100px;
+
+    }
+
+  }
+
+}
+._passiv_img_page-false{
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.48);
+  box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.48);
+}
+
+._btn_return{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.yandex{
+  margin-top: 16px;
+}
+.addres, .phone, .skyp{
+p{
+  margin-left: 20px;
+}
+}
+._opisanie_tovara {
+  border: 1px solid;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.48);
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.48);
+  padding-bottom: 16px;
+}
+
+.heder{
+  margin-top: 10px;
+}
+._text_heder{
+
+  margin-top: 15px;
+  font-size: @heder-font*1.2;
+}
+.text_main{
+  padding: 10px;
+  p {
+    font-family: RobotoLight;
+    text-indent: 12px;
+    text-align: justify;
+    font-size: @heder-font;
+  }
+  p:nth-child(4){
+    text-align: center;
+    font-size: @heder-font*1.4;
+    font-weight: 600;
+  }
+}
+.logo{
+  height: 100%;
+  width: 100%;
+}
+.main_body{
+  margin-top: 30px;
+}
+.slide_item{
+  text-align: center;
+  margin-top: 20px;
+  img{
+    width: 500px;
+    height: 300px;
+  }
+}
+.next_button{
+  right: 50px;
+  background-color: #fff;
+  border-radius: 10em;
+  color: #7573D9;
+  cursor: pointer;
+  font-size: 46px;
+  padding: 0 25px;
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  opacity: .7;
+}
+.prev_button{
+  left: 50px;
+  background-color: #fff;
+  border-radius: 10em;
+  color: #7573D9;
+  cursor: pointer;
+  font-size: 46px;
+  padding: 0 25px;
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  opacity: .7;
+}
+.element{
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+
+  border-radius: 20px ;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.51);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.51);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.51);
+  img{
+    height: 200px;
+    width: 200px;
+    transition: 1s;
+  }
+  &:hover{
+
+    -webkit-box-shadow: 0px 6px 5px 3px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 6px 5px 3px rgba(0,0,0,0.51);
+    box-shadow: 0px 6px 5px 3px rgba(0,0,0,0.51);
+    a{
+      color:#FF8300 ;
+
+    }
+  }
+  a{
+    cursor: pointer;
+  }
+
+}
+.otziv{
+  margin-top: 30px;
+  position: relative;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+
+  img{
+    vertical-align: middle;
+    float: left;
+  }
+  div{
+    padding: 5px;
+    position: relative;
+    font-family: RobotoRegular;
+    text-align: justify;
+    float: left;
+  }
+  div:nth-child(2){
+    text-align: right;
+  }
+}
+#map{
+  height: 400px;
+  width: 400px;
+}
+
+#Shadow{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 15;
+  background-color: black;
+  opacity: 0.5;
+}
+
+// переопределение
+.fa-phone:before,.fa-envelope:before {
+
+  margin-right: 10px;
+}
+.nav{
+  font-size: @heder-font*1.1;
+}
+
+.fa-mail-reply:before, .fa-reply:before {
+  content: "\f112";
+  margin-right: 8px;
+}
+
+#Mail_box {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  .frm{
+    background-color: white;
+    border-radius: 10px;
+
+    textarea{
+      height: 200px;
+    }
+  }
+}
+#Phone_box{
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  .frm{
+    background-color: white;
+    border-radius: 10px;
+
+  }
+}
+._full_instruction{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  text-align: center;
+  /* text-decoration: underline; */
+  border-bottom: 1px solid;
+}
+
+
+
+
+@media (max-width:992px) {
+  ._heder_btn_up{
+    >div{
+      margin-top: 10px;
+    }
+  }
+  ._images_full div:nth-child(1) img{
+    height: 200px;
+  }
+  ._images_full div:nth-child(2) img {
+    height: 70px;
+  }
+  .next_button, .prev_button {
+    font-size: 30px;
+    padding: 0 16px;
+
+  }
+
+  ._opisanie_tovara{
+    margin-top: 10px;
+  }
+  ._images_full div:nth-child(1) img {
+    height: 250px;
+  }
+  ._images_full div:nth-child(2) img {
+    height: 90px;
+  }
+
+
+
+}
+//Основной Цвет:
+//1D1AB2	323086	0B0974	514ED9	7573D9
+// Вторичный Цвет A:
+//FFF700	BFBB30	A6A000	FFF940	FFFB73
+//Вторичный Цвет B:
+//FF8300	BF7930	A65500	FFA240	FFBB73

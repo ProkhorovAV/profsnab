@@ -1,0 +1,32 @@
+.container
+    .container.main_body
+        .row
+            ul.nav.nav-tabs
+                li
+                    a(ui-sref="main") Главная
+                li
+                    a(ui-sref="products") Продукция
+                li
+                    a(ui-sref="information") Полезная информация
+                li.active
+                    a(href="#") Контакты
+                li
+                    a(ui-sref="recall") Отзывы
+    .container
+        .row
+            .col-sm-6(style='padding-top:30px').col-xs-12
+                .addres.col-xs-12
+                    b Адрес:
+                    br
+                    p 111673 Россия,<br/> г. Москва, Новокосинская ул., д.17, кор.7
+                .phone.col-xs-12
+                    b Телефон:
+                    br
+                    p +7 (499) 398-41-23,<br/> +7 (917) 599-31-49
+                .skyp.col-xs-12
+                    b Skype:
+                    br
+                    p profsnab7778
+            .col-sm-6.yandex.col-xs-12
+                ya-map(ya-zoom="15" ya-center="[37.852841,55.739558]" ya-after-init="afterMapInit($target)")
+                    ya-geo-object(ya-source="geoObjects[0]" ya-options="{preset:'islands#blackStretchyIcon',draggable:true}")

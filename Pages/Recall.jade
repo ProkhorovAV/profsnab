@@ -1,0 +1,21 @@
+.container
+    .container.main_body
+        .row
+            ul.nav.nav-tabs
+                li
+                    a(ui-sref="main") Главная
+                li
+                    a(ui-sref="products") Продукция
+                li
+                    a(ui-sref="information") Полезная информация
+                li
+                    a(ui-sref="kontaks") Контакты
+                li.active
+                    a(href="#") Отзывы
+    .container
+        .row
+            .otziv.col-sm-6.col-sm-offset-3(ng-repeat='otziv in array_otziv').col-xs-12
+                img(ng-src='{{otziv.img}}').col-xs-4
+                ._otziv_data.col-xs-8 {{otziv.time}} <b>{{otziv.data}}</b>
+                ._otziv_text.col-xs-8 {{otziv.text}}
+
