@@ -125,6 +125,16 @@ angular.module('profnab_App.controller.Product',[])
                         'img/product/scotchKontrol/11.jpg',
                         'img/product/scotchKontrol/12.jpg'
                             ]
+                },
+                {
+                    name:'Термо этикетки',
+                    img:[
+                        'img/product/termoEtiket/1.jpg',
+                        'img/product/termoEtiket/2.jpg',
+                        'img/product/termoEtiket/3.jpg'
+                    ],
+                    text:'Термо этикетки',
+                    options:''
                 }
 
             ];
